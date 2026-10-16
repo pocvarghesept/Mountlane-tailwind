@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css style -->
+    <link rel="stylesheet" href="./style.css">
+     <!-- tailwnd js link -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <!-- fontawesome -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar flex justify-around item-center bg-white text-black p-6">
+        <span class="brandName font-semibold text-3xl">MOUNTLANE</span>
+        <ul class="brandLinks flex flex-row justify-around item-center">           
+            <li class="navitem list-none"><a class="navlink px-2" href="#">Home</a></li>           
+            <li class="navitem list-none"><a class="navlink px-2" href="#">Destinations</a></li>  
+            <li class="navitem list-none"><a class="navlink px-2" href="#">About us</a></li>
+            <li class="navitem list-none"><a class="navlink px-2" href="#">Contact</a></li>    
+        </ul>
+        <div><BUtton class="navbutton">View more</BUtton></div>
+    </nav>
+    
+    <!-- hero section -->
+     <section class="relative">
+            <img class="heroimage w-full h-170 object-cover" src="./imaget/bg wall.jpg" alt="mountain">
+            <div class="absolute bottom-50 left-40 text-white">
+                    <h1 class="font-semibold text-6xl">Discover your <br> <em class="text-yellow-500">Next Adventure.</em></h1>
+                    <p class="mt-4">find places that move you, moments that stay with you, and journeys worth telling stories about.</p>
+                    <button class="bg-yellow-500 text-black p-5 mt-6 rounded-md">Explore Destnatioins &nearr;</button>
+            </div>
+     </section>
+
+     <!-- card section -->
+      <!-- popular destinations -->
+       <h1 class="cardTitle text-6xl font-semibold bg-white text-black px-20 pt-10">Popular <em class="text-yellow-500">Destination.</em></h1>
+      <section class="lg:grid grid-cols-3 md:cols-2 p-20 bg-white text-black gap-10">
+                <!-- card 1 -->
+                <div class="card border-none rounded-md max-w-sm bg-white text-black text-center mb-5 lg:mb-0 transition-transform duration-300 hover:translate-y-3 justify-between">
+                    <img class="rounded-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOpihxbEiNjqqd63mLv_arOwWMdZvMHQf6C9Mj4eEs9CwFhM8c46ErCig&s=10" alt="">
+                    <h1 class="text-2xl text-black p-2">Sikkim</h1>
+                    <p class="text-xs">Misty hills, emerald tea gardens, and quiet mountain mornings.</p>
+                    <br><hr class="border-t border-gray-300"><br>
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="px-6 py-3 m-2"><b>$1000</b>/person</p>
+                        </div>
+                        <div>
+                            <button class="border-black rounded-lg bg-white text-black hover:bg-yellow-300 hover:text-black px-5 py-2 m-2">View more</button>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card rounded-xl max-w-sm bg-white text-black text-center mb-5 lg:mb-0 transition-transform duration-300 hover:translate-y-3 justify-between">
+                    <img class="rounded-lg" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Dal_LakeVR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" alt="">
+                    <h1 class="text-2xl text-black p-2">Kashmir</h1>
+                    <p class="text-xs">Misty hills, emerald tea gardens, and quiet mountain mornings.</p>
+                    <br><hr class="border-t border-gray-300"><br>
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="px-6 py-3 m-2"><b>$1000</b>/person</p>
+                        </div>
+                        <div>
+                            <button class="border-black rounded-lg bg-white text-black hover:bg-yellow-300 hover:text-black px-5 py-2 m-2">View more</button>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card rounded-md max-w-sm bg-white text-black text-center mb-5 lg:mb-0 transition-transform duration-300 hover:translate-y-3 justify-between">
+                    <img class="rounded-lg" src="https://media.istockphoto.com/id/1224021113/photo/indian-cameleers-camel-driver-with-camel-silhouettes-in-dunes-on-sunset-jaisalmer-rajasthan.jpg?s=612x612&w=0&k=20&c=MeF2Dl4ya1NVOWM_I_xo3EPd8E-iazBghYhjiyRaTcU=" alt="">
+                    <h1 class="text-2xl text-black p-2">Rajesthan</h1>
+                    <p class="text-xs">Misty hills, emerald tea gardens, and quiet mountain mornings.</p>
+                    <br><hr class="border-t border-gray-300"><br>
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="px-6 py-3 m-2"><b>$1000</b>/person</p>
+                        </div>
+                        <div>
+                            <button class="border-black rounded-lg bg-white text-black hover:bg-yellow-300 hover:text-black px-5 py-2 m-2">View more</button>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="card rounded-md max-w-sm bg-white text-black text-center mb-5 lg:mb-0 transition-transform duration-300 hover:translate-y-3 justify-between">
+                    <img class="rounded-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRir6oqV8nhEHq0twJDBbfBvBGDyPJtTWWxC7Xq9YpYT1tvfcUMRm_OisNc&s=10" alt="">
+                    <h1 class="text-2xl text-black p-2">Kerala</h1>
+                    <p class="text-xs">Misty hills, emerald tea gardens, and quiet mountain mornings.</p>
+                    <br><hr class="border-t border-gray-300"><br>
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="px-6 py-3 m-2"><b>$1000</b>/person</p>
+                        </div>
+                        <div>
+                            <button class="border-black rounded-lg bg-white text-black hover:bg-yellow-300 hover:text-black px-5 py-2 m-2">View more</button>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- card 5 -->
+                <div class="card rounded-md max-w-sm bg-white text-black text-center mb-5 lg:mb-0 transition-transform duration-300 hover:translate-y-3 justify-between">
+                    <img class="rounded-lg" src="https://vl-prod-static.b-cdn.net/system/images/000/684/436/3c505cb1a89ca1cdd775c0e9742c8e4c/original/South_Goa-612x612.jpg" alt="">
+                    <h1 class="text-2xl text-black p-2">Goa</h1>
+                    <p class="text-xs">Misty hills, emerald tea gardens, and quiet mountain mornings.</p>
+                    <br><hr class="border-t border-gray-300"><br>
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="px-6 py-3 m-2"><b>$1000</b>/person</p>
+                        </div>
+                        <div>
+                            <button class="border-black rounded-lg bg-white text-black hover:bg-yellow-300 hover:text-black px-5 py-2 m-2">View more</button>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- card 6 -->
+                <div class="card rounded-lg max-w-sm bg-white text-black text-center mb-5 lg:mb-0 transition-transform duration-300 hover:translate-y-3 justify-between">
+                    <img class="rounded-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgbwfxugWgnGbbkHg-K0pw4O6SvHNtk7Fey6t2halSU6BKXGgZgvIOYy8&s=10" alt="">
+                    <h1 class="text-2xl text-black p-2">Thamil Nadu</h1>
+                    <p class="text-xs">Misty hills, emerald tea gardens, and quiet mountain mornings.</p>
+                    <br><hr class="border-t border-gray-300"><br>
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="px-6 py-3 m-2"><b>$1000</b>/person</p>
+                        </div>
+                        <div>
+                            <button class="border-black rounded-lg bg-white text-black hover:bg-yellow-300 hover:text-black px-5 py-2 m-2">View more</button>
+                        </div>
+
+                    </div>
+                </div>
+      </section>
+
+      <!-- footer section -->
+        <footer class="flex bg-olive-800 text-white p-20 justify-around">
+            <div>
+                <h4 class="py-3 text-3xl">MOUNTLANE</h4>
+                <p class="text-xs font-light">Collect places. Make memories. Find your way to something wonderful.</p>
+            </div>
+            <ul>
+                <h5 class="text-yellow-300">Explore</h5>
+                <li class="list-none font-light">Home</li>
+                <li class="list-none font-light">About us</li>
+                <li class="list-none font-light">Contact</li>
+                <li class="list-none font-light">Plan your trip</li>
+            </ul>
+            <ul>
+                <h5 class="text-yellow-300">Get in touch</h5>
+                <li class="list-none font-light">Mountlanetravell@gmail.com</li>
+                <li class="list-none font-light">+91 9778773019</li>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </ul>
+            <hr class="border-t border-white-300">
+        </footer>
+        <hr class="border-t border-white-100">
+        <p class="bg-olive-800 text-white font-extralight">&copy;-All right are resrved</p>
+</body>
+</html>
